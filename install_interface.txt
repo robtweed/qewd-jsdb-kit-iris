@@ -1,0 +1,2 @@
+d $system.OBJ.Load("/home/irisowner/qewd/qewdInterface.xml","ck")
+h

@@ -1,0 +1,18 @@
+  {
+    "qewd": {
+      "poolSize": 2,
+      "port": 8080,
+      "bodyParser": "body-parser",
+      "managementPassword": "secret",
+      "database": {
+        "type": "dbx",
+        "params": {
+          "database": "IRIS",
+          "path": "/usr/irissys/mgr",
+          "username": "_SYSTEM",
+          "password": "secret",
+          "namespace": "USER"
+        }
+      }
+    }
+  }
