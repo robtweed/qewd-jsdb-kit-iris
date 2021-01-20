@@ -132,7 +132,7 @@ Then run the installation script contained in the mapped copy of this Repository
         source qewd/install_qewd.sh
 
 
-This should just take a few seconds to run.
+This should just take a minute or so to run.
 
 
 # Prepare the IRIS Container
@@ -152,7 +152,7 @@ System Management Portal you'll be forced to change the password.
       - Services
 
   Near the top of the list you'll find the service named *%Service Callin*.  Select this and check
-the *Enable Service* checkbox.
+the *Enable Service* checkbox and click the *Save* button to confirm.
 
 
 # Start QEWD for the First Time

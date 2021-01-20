@@ -1512,7 +1512,7 @@ It should look like this:
         var doc = jsdb.use('exampleDom');
         doc.enable_dom();
         doc.delete();
-        var filepath = 'example.xml';
+        var filepath = '/home/irisowner/qewd-jsdb/example.xml';
         doc.dom.parser.parseFile(filepath, function(dom) {
           console.log(dom.output(2));
         });
