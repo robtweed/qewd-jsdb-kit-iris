@@ -1498,25 +1498,21 @@ has a single argument: the QEWD-JSdb DOM object that has been created.
 You can try it out.  You won't be able to use the *parseFile()* method interactively in
 the Node.js REPL, but you can run it via a script file.
 
-You'll find an 
-[example XML document in this repository](https://github.com/robtweed/qewd-starter-kit-iris-networked/blob/master/example.xml).  Download it and copy it into the mapped host directory
-that you specified when you started the IRIS Docker Container, eg:
+You'll find an example XML file in the IRIS container's *~/qewd-jsdb* directory.
+Also in that directory you'll find a JavaScript script file named *loadxml.js* which
+will parse the example file's XML contents into a QEWD-JSdb DOM.
 
-        ~/qewd-jsdb-iris/example.xml
+Take a look at the contents of the *loadxml.js* file:
 
-which is mapped to the running IRIS Container's directory:
+        cat ~/qewd-jsdb/loadxml.js
 
-        /home/irisowner/qewd/example.xml
-
-Then create a file in the same
-directory named *loadxml.js* containing:
-
+It should look like this:
 
         var jsdb = require('./jsdb_shell');
         var doc = jsdb.use('exampleDom');
         doc.enable_dom();
         doc.delete();
-        var filepath = '/home/irisowner/qewd/example.xml';
+        var filepath = 'example.xml';
         doc.dom.parser.parseFile(filepath, function(dom) {
           console.log(dom.output(2));
         });
@@ -1525,7 +1521,7 @@ directory named *loadxml.js* containing:
 Shell into the IRIS Docker Container and run the *loadxml.js* script:
 
         cd ~/qewd-jsdb
-        node /home/irisowner/qewd/loadxml.js
+        node loadxml.js
 
 
 After a second or two you should see the XML listing:
@@ -1609,17 +1605,14 @@ has a single argument: the QEWD-JSdb DOM object that has been created.
 You can try it out.  You won't be able to use the *parsText()* method interactively in
 the Node.js REPL, but you can run it via a script file.
 
-Create a file named *loadtext.js* the mapped host directory
-that you specified when you started the IRIS Docker Container, eg:
+In the IRIS Container's *~/qewd-jsdb* directory you'll find a file named *loadtext.js*
+which is an example JavaScript script file.
 
-        ~/qewd-jsdb-iris/loadtext.js
+Take a look at the contents of the *loadtext.js* file:
 
-which is mapped to the running IRIS Container's directory:
+        cat ~/qewd-jsdb/loadtext.js
 
-        /home/irisowner/qewd/loadtext.js
-
-
-The file should contain:
+It should look like this:
 
 
         var jsdb = require('./jsdb_shell');
@@ -1634,7 +1627,7 @@ The file should contain:
 Shell into the IRIS Docker Container and run the *loadtext.js* script:
 
         cd ~/qewd-jsdb
-        node /home/irisowner/qewd/loadtext.js
+        node loadtext.js
 
 
 After a second or two you should see the XML listing:

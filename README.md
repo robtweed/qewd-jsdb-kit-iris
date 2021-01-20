@@ -45,7 +45,7 @@ Read and follow the [Installation and Configuration Instructions here](./INSTALL
 Familiarise yourself with the concepts behind QEWD-JSdb by
 [taking the initial tutorial](./REPL.md) where you can
 interact directly with the QEWD-JSdb abstraction of your IRIS
-Global Storage withing the Node.js REPL.
+Global Storage within the Node.js REPL.
 
 
 # Model-Specific Exploration

@@ -27,6 +27,9 @@ fi
 git clone https://github.com/robtweed/qewd-jsdb
 cp ~/qewd/package.json ~/qewd-jsdb
 cp ~/qewd/jsdb_shell.js ~/qewd-jsdb
+cp ~/qewd/loadxml.js ~/qewd-jsdb
+cp ~/qewd/loadtext.js ~/qewd-jsdb
+cp ~/qewd/example.xml ~/qewd-jsdb
 cp ~/qewd/config.json ~/qewd-jsdb/configuration
 cd qewd-jsdb
 npm install
