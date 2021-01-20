@@ -129,7 +129,7 @@ You should see a prompt similar to this:
 
 Then run the installation script contained in the mapped copy of this Repository:
 
-        source install_qewd.sh
+        source qewd/install_qewd.sh
 
 
 This should just take a few seconds to run.
