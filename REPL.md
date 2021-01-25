@@ -151,6 +151,28 @@ you just created:
 - a "conventional* Global Storage view in the left-hand panel
 - the equivalent storage represented as persistent JSON in the right-hand panel
 
+### The QEWD-JSdb Inspector
+
+At this stage it's also worth drawing your attention to another way to inspect the
+underlying Global Storage, using an interactive graphical visualisation of its 
+hierarchical structure: using the QEWD Monitor application's *QEWD-JSdb Inspector*.
+
+QEWD installations automatically include a web-based application known as the *QEWD Monitor"
+which is a great way to check what's happening within your running QEWD environment.  However,
+the latest version of *QEWD Monitor* also includes the *QEWD-JSdb Inspector*.  To try it
+out on your IRIS Docker Container, open a new browser window and open the URL:
+
+        http://xx.xx.xx.xx:8080/qewd-monitor-adminui
+
+Log in using the pre-configured management password of *password*.  Then select the
+*QEWD-JSdb Inspector* option in the left-hand menu.  Select the *^demo* Global from its
+drop-down menu and you'll see its top Global Node represented graphically.  You can now expand
+and contract each of its child layers: it's a great way to understand the hierarchical structure
+of IRIS Globals!
+
+During the course of this tutorial and the others within this kit, you can use the
+QEWD-JSdb Inspector to further explore the Globals you'll be creating and modifying.
+
 
 ## Continue Exploring
 
