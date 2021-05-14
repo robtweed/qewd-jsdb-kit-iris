@@ -23,7 +23,7 @@ documentStore.close = db.close.bind(db);
 
 console.log("\n\nVersion (mg-dbx-bdb.node): " + db.version());
 
-var max = 1000000;
+var max = 500000;
 var global = new mglobal(db.dbx, 'cm');
 var d1 = new Date();
 var d1_ms = d1.getTime()
